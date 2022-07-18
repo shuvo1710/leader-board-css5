@@ -1,0 +1,15 @@
+/* players part start*/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.player img {
+height: 56px;
+width: 56px;
+}
+.player{
+    display: flex;
+    /* justify-content: center; */
+    justify-items: center;
+}
+/* players part end*/
