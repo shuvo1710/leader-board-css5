@@ -39,7 +39,7 @@ hr{
 }
 .player{
     display: flex;
-    /* justify-content: center; */
+
     align-items: center;
 }
 .player img {
@@ -77,7 +77,7 @@ width: 56px;
 }
 /* blog part end */
 /* cource part start */
-.courses{
+.cources{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
@@ -109,4 +109,33 @@ width: 56px;
 .cource-duretion{
     border-radius: 10px;
     background-color: #FF4A60;
+}
+/* ---------------
+     media query
+------------------- */
+/* Mobile Device */
+@media only screen and (max-width:668px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .cources{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .thumbnail {
+        flex-direction: column;
+    }
+    .thumbnail{
+        align-items: center;
+    }   
+}
+/* taplet devices */
+@media only screen and (min-width:688px) and
+(max-width:922px) {
+    .container{
+        width: 100%;
+    }
+    .players, .cources{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
